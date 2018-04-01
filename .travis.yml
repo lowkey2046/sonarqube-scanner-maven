@@ -1,1 +1,10 @@
 language: java
+dist: trusty
+
+addons:
+  sonarcloud:
+    organization: "lowkey2046"
+    token:
+      secure: "LqCwckuK5zGSLAcVcFXcqncXps17PiOhrQKf4FTwiRVc/un2KehY51086URJ0KgLEFHaQ5p+eSjmDYMcvtvXQcjVTNe7JN4Kg+480BXNUz0vVgY7Do/RB+HhgQATjNLo/zY1HaYCn0Hby3X+av1+SFh4dV+yH94298LjWWfNDAjUBAAZdUBqpMHX2FO2T+PB8kfIBsMZ9zFisNL+Y8TcU6c8Ryffk1pGxg3uSWYg6I9Kqp4td19G2uKFTprnV1T52AbplFh2Ca6sf9FqoX08F0KHWTNwVPHy4m3NqnORtDIddM2jEhzud2lyZ4uH3uGsVwj4DQYNNNxfttSsXppcLT0tYbXghCShWM+hUdLcEUsoFDWmrvXj8w7SOoNPNKoiHHbCFkWV/prQyX91dSgy3N+5pJxTnyJHvN2Nu3oYSBRG/46/ceqKd1kZg1lv2pBTyuvEXysbudjqnkaiFoQX2wokOH4XsvmVgWsAl6MbxVha4JFFJ+OFtipR4ctzHRgUAYg6A3eZBQbbBZowRgOSfKr5WK2k+g9uRq7VfOYms/0q3uDVbs3FCul0g/e5TyeT04Az2d7UDwfwNn2K76V1834ZSzZAFkaE8R8R8mug4TvKi3gRgIFVHcO9fYnrgbm0tslGm3KR+OvthnbpzG6Lo+K33NjwLvTx19VB/W71z04="
+script:
+  - sonar-scanner
